@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>ERES - Add Product</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+    <!-- Plugins css-->
+    <link href="assets/libs/select2/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/summernote/summernote-bs4.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/dropzone/dropzone.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Navigation Bar-->
+    <header id="topnav">
+        <div class="navbar-custom">
+            <div class="container-fluid">
+                <ul class="list-unstyled topnav-menu float-right mb-0">
+                    <li class="dropdown notification-list">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle nav-link">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </li>
+                    <li class="d-none d-sm-block">
+                        <form class="app-search">
+                            <div class="app-search-box">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search..." />
+                                    <div class="input-group-append">
+                                        <button class="btn" type="submit">
+                                            <i class="fe-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="dropdown notification-list">
+                        <a class="nav-link dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="false" aria-expanded="false">
+                            <i class="fe-bell noti-icon"></i>
+                            <span class="badge badge-danger rounded-circle noti-icon-badge">4</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+                            <!-- item-->
+                            <div class="dropdown-item noti-title">
+                                <h5 class="m-0">
+                                    <span class="float-right">
+                                        <a href="#" class="text-light">
+                                            <small>Clear All</small>
+                                        </a> </span>Notification
+                                </h5>
+                            </div>
+                            <div class="slimscroll noti-scroll">
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-warning">
+                                        <i class="mdi mdi-account-plus"></i>
+                                    </div>
+                                    <p class="notify-details">
+                                        New user registered.
+                                        <small class="text-muted">5 hours ago</small>
+                                    </p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-warning">
+                                        <i class="mdi mdi-account-plus"></i>
+                                    </div>
+                                    <p class="notify-details">
+                                        New user registered.
+                                        <small class="text-muted">5 hours ago</small>
+                                    </p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-warning">
+                                        <i class="mdi mdi-account-plus"></i>
+                                    </div>
+                                    <p class="notify-details">
+                                        New user registered.
+                                        <small class="text-muted">5 hours ago</small>
+                                    </p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-warning">
+                                        <i class="mdi mdi-account-plus"></i>
+                                    </div>
+                                    <p class="notify-details">
+                                        New user registered.
+                                        <small class="text-muted">5 hours ago</small>
+                                    </p>
+                                </a>
+                            </div>
+
+                            <!-- All-->
+                            <a href="javascript:void(0);"
+                                class="dropdown-item text-center text-light notify-item notify-all">
+                                View all
+                                <i class="fi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown notification-list">
+                        <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light"
+                            data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            <img src="assets/images/users/user-1.jpg" alt="user-image" class="rounded-circle" />
+                            <span class="pro-user-name ml-1">
+                                Geneva <i class="mdi mdi-chevron-down"></i>
+                            </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                            <!-- item-->
+                            <div class="dropdown-header noti-title">
+                                <h6 class="text-overflow m-0">Welcome !</h6>
+                            </div>
+
+                            <!-- item-->
+                            <a href="profile.html" class="dropdown-item notify-item">
+                                <i class="fe-user"></i>
+                                <span>My Account</span>
+                            </a>
+                            <a href="orders.html" class="dropdown-item notify-item">
+                                <i class="fe-user"></i>
+                                <span>My Orders</span>
+                            </a>
+                            <a href="login.html" class="dropdown-item notify-item">
+                                <i class="fe-log-out"></i>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown notification-list">
+                        <a href="javascript:void(0);" class="nav-link right-bar-toggle waves-effect">
+                            <i class="fe-settings noti-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- LOGO -->
+                <div class="logo-box">
+                    <a href="index.html" class="logo text-center">
+                        <span class="logo-lg">
+                            <img src="assets/images/logo-light.png" alt="" height="46" />
+                            <!-- <span class="logo-lg-text-light">UBold</span> -->
+                        </span>
+                        <span class="logo-sm">
+                            <!-- <span class="logo-sm-text-dark">U</span> -->
+                            <img src="assets/images/logo-sm.png" alt="" height="24" />
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <!-- end container-fluid-->
+        </div>
+        <!-- end Topbar -->
+        <div class="topbar-menu">
+            <div class="container-fluid">
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+                        <li>
+                            <a href="index.html">
+                                <i class="fe-airplay"></i>Dashboards
+                            </a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#">
+                                <i class="fe-cpu"></i>Products
+                                <div class="arrow-down"></div></a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="add-product">Add Products</a>
+                                </li>
+                                <li>
+                                    <a href="view-product">View Products</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="orders.html">
+                                <i class="mdi mdi-basket"></i>Orders
+                            </a>
+                        </li>
+                        <li>
+                            <a href="marketing.html">
+                                <i class="fe-airplay"></i>Marketing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="faqs.html">
+                                <i class="fe-package"></i>Faq's
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                <i class="mdi mdi-email-outline"></i>Contact
+                                Us
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- End navigation menu -->
+                    <div class="clearfix"></div>
+                </div>
+                <!-- end #navigation -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end navbar-custom -->
+    </header>
+    <!-- End Navigation Bar-->
+
+    <!-- ============================================================== -->
+    <!-- Start Page Content here -->
+    <!-- ============================================================== -->
+
+    <div class="wrapper">
+        <div class="container-fluid">
+            <!-- start page title -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-title-box">
+                        <div class="page-title-right">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item">
+                                    <a href="javascript: void(0);">Home</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="javascript: void(0);">Products</a>
+                                </li>
+                                <li class="breadcrumb-item active">
+                                    Add New
+                                </li>
+                            </ol>
+                        </div>
+                        <h4 class="page-title">Add New Product</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- end page title -->
+
+            <form action="/vendor/updateProduct" method="POST" id="productform">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card-box">
+                            <h5 class="text-uppercase mt-0 mb-3">
+                                General
+                            </h5>
+
+                            <div class="form-group mb-3">
+                                <input type="text" id="product-serial" name="serial" class="form-control"
+                                    placeholder="e.g: SR123" value="<%- result[0].serial %>" hidden/>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="product-name">Product Name
+                                    <span class="text-danger">*</span></label>
+                                <input type="text" id="product-name" name="title" class="form-control"
+                                    placeholder="e.g : Apple iMac"  value="<%- result[0].title %>"/>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="product-description">Product Description
+                                    <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="product-description" name="description" rows="5"
+                                    placeholder="Please enter description"  value=""><%- result[0].description %></textarea>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="product-image">Product Image Link
+                                    <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="product-image" name="image"
+                                    placeholder="Please enter image link" value="<%- result[0].image %>">
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="product-category">Categories
+                                    <span class="text-danger">*</span></label>
+                                <select class="form-control select2" id="product-category" name="category" required>
+                                    <option>Select</option>
+                                    <optgroup label="Shopping">
+                                        <option value="SH1">Shopping 1</option>
+                                        <option value="SH2">Shopping 2</option>
+                                        <option value="SH3">Shopping 3</option>
+                                        <option value="SH4">Shopping 4</option>
+                                    </optgroup>
+                                    <optgroup label="CRM">
+                                        <option value="CRM1">Crm 1</option>
+                                        <option value="CRM2">Crm 2</option>
+                                        <option value="CRM3">Crm 3</option>
+                                        <option value="CRM4">Crm 4</option>
+                                    </optgroup>
+                                    <optgroup label="eCommerce">
+                                        <option value="E1">eCommerce 1</option>
+                                        <option value="E2">eCommerce 2</option>
+                                        <option value="E3">eCommerce 3</option>
+                                        <option value="E4">eCommerce 4</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="stock-price">Stock Price
+                                    <span class="text-danger">*</span></label>
+                                <input type="number" class="form-control" id="stock-price" name="stock_price"
+                                    placeholder="Enter amount"  value="<%- result[0].stock_price %>"/>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="sale-price">Sale Price
+                                    <span class="text-danger">*</span></label>
+                                <input type="number" class="form-control" id="sale-price" name="sale_price"
+                                    placeholder="Enter amount"  value="<%- result[0].sale_price %>" />
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="Quantity">Quantity
+                                    <span class="text-danger">*</span></label>
+                                <input type="number" class="form-control" id="Quantity" name="quantity"
+                                    placeholder="Enter quantity"  value="<%- result[0].quantity %>" />
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="mb-2">Size
+                                    <span class="text-danger">*</span></label>
+                                <br />
+                                <div class="radio form-check-inline">
+                                    <input type="radio" id="inlineRadio1" value="small" name="sizes" checked="" />
+                                    <label for="inlineRadio1">
+                                        Small
+                                    </label>
+                                </div>
+                                <div class="radio form-check-inline">
+                                    <input type="radio" id="inlineRadio2" value="medium" name="sizes" />
+                                    <label for="inlineRadio2">
+                                        Medium
+                                    </label>
+                                </div>
+                                <div class="radio form-check-inline">
+                                    <input type="radio" id="inlineRadio3" value="large" name="sizes" />
+                                    <label for="inlineRadio3">
+                                        Large
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-0">
+                                <label>Color</label>
+                                <input type="text" class="form-control" name="colors" rows="3" placeholder="Please enter color" value="<%- result[0].colors[0] %>"></textarea>
+                            </div>
+
+                            <div class="form-group mb-0">
+                                <label>Vendor</label>
+                                <input type="text" hidden class="form-control" name="vendor" rows="3" placeholder="Please enter vendor" value="<%- result[0].vendor %>"></textarea>
+                            </div>
+                        </div>
+                        <!-- end card-box -->
+                    </div>
+                    <!-- end col -->
+
+                    <!-- end col-->
+                </div>
+                <!-- end row -->
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-right mb-3">
+                            <!-- <button type="button" class="btn w-sm btn-light waves-effect">
+                                Cancel
+                            </button> -->
+                            <input type="submit" class="btn w-sm btn-light waves-effect" value="Update Product">
+                            <!-- <input type="submit" 
+                            class="btn w-sm btn-success waves-effect waves-light"
+                                value="Add Product" /> -->
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </form>
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end wrapper -->
+
+    <!-- ============================================================== -->
+    <!-- End Page content -->
+    <!-- ============================================================== -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    &copy; Copyright 2019 by ERES International Trade.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end Footer -->
+
+    <!-- Right Sidebar -->
+    <div class="right-bar">
+        <div class="rightbar-title">
+            <a href="javascript:void(0);" class="right-bar-toggle float-right">
+                <i class="dripicons-cross noti-icon"></i>
+            </a>
+            <h5 class="m-0 text-white">Settings</h5>
+        </div>
+        <div class="slimscroll-menu rightbar-content">
+            <!-- User box -->
+            <div class="user-box">
+                <div class="user-img">
+                    <img src="assets/images/users/user-1.jpg" alt="user-img" title="Mat Helme"
+                        class="rounded-circle img-fluid" />
+                    <a href="profile.html" class="user-edit"><i class="mdi mdi-pencil"></i></a>
+                </div>
+
+                <h5><a href="javascript: void(0);">Geneva Kennedy</a></h5>
+                <p class="text-muted mb-0"><small>Admin Head</small></p>
+            </div>
+
+            <!-- Settings -->
+            <h5 class="py-2 px-3 bg-secondary">Basic Settings</h5>
+
+            <div class="p-3">
+                <div class="checkbox checkbox-primary mb-2">
+                    <input id="Rcheckbox1" type="checkbox" checked />
+                    <label for="Rcheckbox1">
+                        Notifications
+                    </label>
+                </div>
+                <div class="checkbox checkbox-primary mb-2">
+                    <input id="Rcheckbox2" type="checkbox" checked />
+                    <label for="Rcheckbox2">
+                        API Access
+                    </label>
+                </div>
+                <div class="checkbox checkbox-primary mb-2">
+                    <input id="Rcheckbox3" type="checkbox" />
+                    <label for="Rcheckbox3">
+                        Auto Updates
+                    </label>
+                </div>
+                <div class="checkbox checkbox-primary mb-2">
+                    <input id="Rcheckbox4" type="checkbox" checked />
+                    <label for="Rcheckbox4">
+                        Online Status
+                    </label>
+                </div>
+                <div class="checkbox checkbox-primary mb-0">
+                    <input id="Rcheckbox5" type="checkbox" checked />
+                    <label for="Rcheckbox5">
+                        Auto Payout
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- end slimscroll-menu-->
+    </div>
+    <!-- /Right-bar -->
+
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+
+    <!-- Vendor js -->
+    <script src="assets/js/vendor.min.js"></script>
+
+    <!-- Summernote js -->
+    <script src="assets/libs/summernote/summernote-bs4.min.js"></script>
+    <!-- Select2 js-->
+    <script src="assets/libs/select2/select2.min.js"></script>
+    <!-- Dropzone file uploads-->
+    <script src="assets/libs/dropzone/dropzone.min.js"></script>
+
+    <!-- Init js -->
+    <script src="assets/js/pages/add-product.init.js"></script>
+
+    <!-- App js-->
+    <script src="assets/js/app.min.js"></script>
+</body>
+
+<script>
+    $(document).ready(function() {
+        // $("#product-name").val("<%= result.title %>");
+    });
+</script>
+
+</html>

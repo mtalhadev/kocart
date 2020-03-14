@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>ERES - Order detail</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <ul class="list-unstyled topnav-menu float-right mb-0">
+                        <li class="dropdown notification-list">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle nav-link">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </li>
+                        <li class="d-none d-sm-block">
+                            <form class="app-search">
+                                <div class="app-search-box">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search..." />
+                                        <div class="input-group-append">
+                                            <button class="btn" type="submit">
+                                                <i class="fe-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                <i class="fe-bell noti-icon"></i>
+                                <span class="badge badge-danger rounded-circle noti-icon-badge">4</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+    
+                                <!-- item-->
+                                <div class="dropdown-item noti-title">
+                                    <h5 class="m-0">
+                                        <span class="float-right">
+                                            <a href="#" class="text-light">
+                                                <small>Clear All</small>
+                                            </a>
+                                        </span>Notification
+                                    </h5>
+                                </div>
+                                <div class="slimscroll noti-scroll">
+                                     <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-warning">
+                                            <i class="mdi mdi-account-plus"></i>
+                                        </div>
+                                        <p class="notify-details">New user registered.
+                                            <small class="text-muted">5 hours ago</small>
+                                        </p>
+                                    </a>
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-warning">
+                                            <i class="mdi mdi-account-plus"></i>
+                                        </div>
+                                        <p class="notify-details">New user registered.
+                                            <small class="text-muted">5 hours ago</small>
+                                        </p>
+                                    </a>
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-warning">
+                                            <i class="mdi mdi-account-plus"></i>
+                                        </div>
+                                        <p class="notify-details">New user registered.
+                                            <small class="text-muted">5 hours ago</small>
+                                        </p>
+                                    </a>
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-warning">
+                                            <i class="mdi mdi-account-plus"></i>
+                                        </div>
+                                        <p class="notify-details">New user registered.
+                                            <small class="text-muted">5 hours ago</small>
+                                        </p>
+                                    </a>
+                                </div>
+    
+                                <!-- All-->
+                                <a href="javascript:void(0);" class="dropdown-item text-center text-light notify-item notify-all">
+                                    View all
+                                    <i class="fi-arrow-right"></i>
+                                </a>
+    
+                            </div>
+                        </li>
+    
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                <img src="assets/images/users/user-1.jpg" alt="user-image" class="rounded-circle">
+                                <span class="pro-user-name ml-1">
+                                    Geneva <i class="mdi mdi-chevron-down"></i> 
+                                </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                <!-- item-->
+                                <div class="dropdown-header noti-title">
+                                    <h6 class="text-overflow m-0">Welcome !</h6>
+                                </div>
+    
+                                <!-- item-->
+                                <a href="profile.html" class="dropdown-item notify-item">
+                                    <i class="fe-user"></i>
+                                    <span>My Account</span>
+                                </a>
+                                <a href="orders.html" class="dropdown-item notify-item">
+                                    <i class="fe-user"></i>
+                                    <span>My Orders</span>
+                                </a>
+                                <a href="login.html" class="dropdown-item notify-item">
+                                    <i class="fe-log-out"></i>
+                                    <span>Logout</span>
+                                </a>
+    
+                            </div>
+                        </li>
+    
+                        <li class="dropdown notification-list">
+                            <a href="javascript:void(0);" class="nav-link right-bar-toggle waves-effect">
+                                <i class="fe-settings noti-icon"></i>
+                            </a>
+                        </li>
+    
+                    </ul>
+    
+                    <!-- LOGO -->
+                    <div class="logo-box">
+                        <a href="index.html" class="logo text-center">
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-light.png" alt="" height="46">
+                                <!-- <span class="logo-lg-text-light">UBold</span> -->
+                            </span>
+                            <span class="logo-sm">
+                                <!-- <span class="logo-sm-text-dark">U</span> -->
+                                <img src="assets/images/logo-sm.png" alt="" height="24">
+                            </span>
+                        </a>
+                    </div>
+                </div> <!-- end container-fluid-->
+            </div>
+            <!-- end Topbar -->
+            <div class="topbar-menu">
+                <div class="container-fluid">
+                    <div id="navigation">
+                        <!-- Navigation Menu-->
+                        <ul class="navigation-menu">
+                            <li>
+                                <a href="index.html">
+                                    <i class="fe-airplay"></i>Dashboards
+                                </a>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#"> <i class="fe-cpu"></i>Products <div class="arrow-down"></div></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="add-product.html">Add Products</a>
+                                    </li>
+                                    <li>
+                                        <a href="view-product.html">View Products</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="orders.html">
+                                    <i class="mdi mdi-basket"></i>Orders
+                                </a>
+                            </li>
+                            <li>
+                                <a href="marketing.html">
+                                    <i class="fe-airplay"></i>Marketing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="faqs.html">
+                                    <i class="fe-package"></i>Faq's
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    <i class="mdi mdi-email-outline"></i>Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End navigation menu -->
+                        <div class="clearfix"></div>
+                    </div>
+                    <!-- end #navigation -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end navbar-custom -->
+        </header>
+        <!-- End Navigation Bar-->
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="wrapper">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box">
+                            <div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Home</a></li>
+                                    <li class="breadcrumb-item active">Order detail</li>
+                                </ol>
+                            </div>
+                            <h4 class="page-title">Order detail</h4>
+                        </div>
+                    </div>
+                </div>     
+                <!-- end page title --> 
+
+                <!-- ============================================================== -->
+
+                <!-- ============================================================== -->
+
+                <!-- ============================================================== -->
+
+                <!-- ============================================================== -->
+
+                <!-- ============================================================== -->
+
+                <!-- ============================================================== -->
+
+                <!-- ============================================================== -->
+
+
+                <div class="row" >
+                    <div class="col-12">
+                        <div class="card-box">
+                            <!-- Logo & title -->
+                            <div class="clearfix">
+                                <div class="float-left">
+                                    <img src="assets/images/logo-light.png" alt="" height="20">
+                                </div>
+                                <div class="float-right">
+                                    <h4 class="m-0 d-print-none">Order</h4>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mt-3">
+                                        <p><b>Hello, Stanley Jones</b></p>
+                                        <p class="text-muted">Thanks a lot because you keep purchasing our products. Our company
+                                            promises to provide high quality products for you as well as outstanding
+                                            customer service for every transaction. </p>
+                                    </div>
+
+                                </div><!-- end col -->
+                            </div>
+                            <!-- end row -->
+
+
+                            <!-- =============================================================== -->
+                            <!-- =============================================================== -->
+                            <!-- =============================================================== -->
+                            <!-- =============================================================== -->
+                            <!-- =============================================================== -->
+                            <!-- =============================================================== -->
+                            <!-- =============================================================== -->
+                            <div class="row mt-3">
+                                <div class="col-sm-6">
+                                    <h6>Billing Address</h6>
+                                    <address id="address">
+                                        Stanley Jones<br>
+                                        795 Folsom Ave, Suite 600<br>
+                                        San Francisco, CA 94107<br>
+                                        <abbr title="Phone">P:</abbr> (123) 456-7890
+                                    </address>
+                                </div> <!-- end col -->
+                            </div> 
+                            <!-- end row -->
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="table-responsive">
+                                        <table class="table mt-4 table-centered">
+                                            <thead>
+                                            <tr><th>#</th>
+                                                <th>Item</th>
+                                                <th style="width: 10%">Quantity</th>
+                                                <th style="width: 10%">Price</th>
+                                                <th style="width: 10%" class="text-right">Total</th>
+                                            </tr></thead>
+                                            <tbody id="orderlist">
+
+                                            </tbody>
+                                        </table>
+                                    </div> <!-- end table-responsive -->
+                                </div> <!-- end col -->
+                            </div>
+                            <!-- end row -->
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="clearfix pt-5">
+                                        <h6 class="text-muted">Notes:</h6>
+
+                                        <small class="text-muted">
+                                            All accounts are to be paid within 7 days from receipt of
+                                            invoice. To be paid by cheque or credit card or direct payment
+                                            online. If account is not paid within 7 days the credits details
+                                            supplied as confirmation of work undertaken will be charged the
+                                            agreed quoted fee noted above.
+                                        </small>
+                                    </div>
+                                </div> <!-- end col -->
+                                <div class="col-sm-6">
+                                    <div class="float-right">
+                                        
+                                        <h3 id="total_price"></h3>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div> <!-- end col -->
+                            </div>
+                            <!-- end row -->
+
+                            <div class="mt-4 mb-1">
+                                <div class="text-right d-print-none">
+                                    <a href="javascript:window.print()" class="btn btn-primary waves-effect waves-light"><i class="mdi mdi-printer mr-1"></i> Print</a>
+                                    <a href="#" class="btn btn-info waves-effect waves-light">Submit</a>
+                                </div>
+                            </div>
+                        </div> <!-- end card-box -->
+                    </div> <!-- end col -->
+                </div>
+                <!-- end row --> 
+                
+            </div> <!-- end container -->
+        </div>
+        <!-- end wrapper -->
+
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+        <!-- Footer Start -->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        &copy; Copyright 2019 by ERES International Trade. 
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end Footer -->
+
+        <!-- Right Sidebar -->
+        <div class="right-bar">
+            <div class="rightbar-title">
+                <a href="javascript:void(0);" class="right-bar-toggle float-right">
+                    <i class="dripicons-cross noti-icon"></i>
+                </a>
+                <h5 class="m-0 text-white">Settings</h5>
+            </div>
+            <div class="slimscroll-menu rightbar-content">
+                <!-- User box -->
+                <div class="user-box">
+                    <div class="user-img">
+                        <img src="assets/images/users/user-1.jpg" alt="user-img" title="Mat Helme" class="rounded-circle img-fluid">
+                        <a href="profile.html" class="user-edit"><i class="mdi mdi-pencil"></i></a>
+                    </div>
+            
+                    <h5><a href="javascript: void(0);">Geneva Kennedy</a> </h5>
+                    <p class="text-muted mb-0"><small>Admin Head</small></p>
+                </div>
+
+                <!-- Settings -->
+                <h5 class="py-2 px-3 bg-secondary">Basic Settings</h5>
+
+                <div class="p-3">
+                    <div class="checkbox checkbox-primary mb-2">
+                        <input id="Rcheckbox1" type="checkbox" checked>
+                        <label for="Rcheckbox1">
+                            Notifications
+                        </label>
+                    </div>
+                    <div class="checkbox checkbox-primary mb-2">
+                        <input id="Rcheckbox2" type="checkbox" checked>
+                        <label for="Rcheckbox2">
+                            API Access
+                        </label>
+                    </div>
+                    <div class="checkbox checkbox-primary mb-2">
+                        <input id="Rcheckbox3" type="checkbox">
+                        <label for="Rcheckbox3">
+                            Auto Updates
+                        </label>
+                    </div>
+                    <div class="checkbox checkbox-primary mb-2">
+                        <input id="Rcheckbox4" type="checkbox" checked>
+                        <label for="Rcheckbox4">
+                            Online Status
+                        </label>
+                    </div>
+                    <div class="checkbox checkbox-primary mb-0">
+                        <input id="Rcheckbox5" type="checkbox" checked>
+                        <label for="Rcheckbox5">
+                            Auto Payout
+                        </label>
+                    </div>
+                </div>
+            </div> <!-- end slimscroll-menu-->
+        </div>
+        <!-- /Right-bar -->
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+        <!-- App js-->
+        <script src="assets/js/app.min.js"></script>
+        
+    </body>
+
+    <script>
+        $(document).ready(function() {
+            $.getJSON("/getOrders1", function(result) {
+                $.each(result, function (i, field) {
+                    $.each(field.products, function(j, prod) {
+                    $("#orderlist").append(
+                        `<tr>
+                            <td>`+(i+1)+`</td>
+                            <td>
+                                `+prod.title+` <span class='badge badge-danger'>`+field.status+`</span>
+                            </td>
+                            <td>`+prod.quantity+`</td>
+                            <td>$`+prod.sale_price+`</td>
+                            <td class="text-right">$`+prod.sale_price*prod.quantity+`</td>
+                        </tr>`
+                    );
+                });
+                $("#total_price").html("$"+field.total_price);
+                $("#order_status").html("<span class='badge badge-danger'>"+field.status+"</span>");
+                $("#address").html(field.address);
+            });
+            });
+        });
+    </script>
+</html>

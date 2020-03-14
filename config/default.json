@@ -1,0 +1,3 @@
+{
+    "MONGO_URI":"mongodb+srv://admin:o2EZ39BZ249jlp5d@cluster0-fafed.gcp.mongodb.net/test?retryWrites=true&w=majority"
+}
